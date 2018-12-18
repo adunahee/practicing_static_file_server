@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <!-- Be sure to source test and testCode function to run both -->
+    <script src="scripts/client.test.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Salary Calculator</h1>
+    </header>
+    <hr>
+    <main>
+        <h2>
+            Employee Data Input
+        </h2>
+        <section>
+            <p>Fill out all fields below and click "Add Employee" button to update table.</p>
+            <div class="input-box">
+            <label>First Name:</label>
+            <input type="text" id="fName">
+            <label>Last Name:</label>
+            <input type="text" id="lName" />
+            </div>
+            <div class="input-box">
+            <label>ID Number:</label>
+            <input type="number" id="empNum">
+            <label>Job Title:</label>
+            <input type="text" id="title">
+            </div>
+            <div class="input-box">
+            <label>Annual Salary:</label>
+            <input type ="number" id="annSal"> 
+            </div> 
+            <button id="addEmployeeButton">Add Employee</button>
+        </section>
+        <br/>
+        <section>
+            <h2>
+                Employee Summary Table
+            </h2>
+            <p>You may remove employees from table by clicking anywhere on row containing them. If total monthly salary exceeds $20,000.00, then above form will be disabled until an employee is removed.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID Number</th>
+                        <th>Title</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td></td>
+                    <td colspan="2" id="monthlySalaryLabel"><strong>Total Monthly Salary:</strong></td>
+                    <td id="totMonSalCell"></td>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Anthony Dunahee</p>
+    </footer>
+</body>
+</html>

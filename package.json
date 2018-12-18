@@ -1,0 +1,24 @@
+{
+  "name": "practicing_static_file_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node salary-calculator-server/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adunahee/practicing_static_file_server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adunahee/practicing_static_file_server/issues"
+  },
+  "homepage": "https://github.com/adunahee/practicing_static_file_server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
